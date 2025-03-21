@@ -1,4 +1,4 @@
-class Solution {
+class SearchIndex {
     public int searchInsert(int[] nums, int target) {
         int n = nums.length;
         int l = 0,h = n-1;
@@ -12,6 +12,12 @@ class Solution {
                 h=mid-1;
             }
         }
-        return l; 
+        return l;
+        
+    }
+    public static void main(String []args){
+        int nums[]={1,2,4,5,6,7};
+        int target=3;
+        System.out.print(searchInsert(nums,target));
     }
 }
